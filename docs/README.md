@@ -1,6 +1,6 @@
 # Documentation
 
-Supporting documentation for the Copilot Forge framework.
+Supporting documentation for the Lumen framework.
 
 ## Start Here
 

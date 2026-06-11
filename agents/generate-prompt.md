@@ -39,7 +39,7 @@ This skill turns any natural language customer use case into a complete, product
 1. **Analyzes** the use case to identify the Purview domain (DLP, IRM, DSPM, MIP, Audit)
 2. **Classifies** into one or more of 9 taxonomy categories (Triage, Investigation, Summarization, Reporting, Enrichment, Hunting, Advisory, Operational, Workshop)
 3. **Selects** the optimal prompt design pattern(s) from 10 proven patterns
-4. **Maps** to validated SC capabilities (the 6 Purview plugin capabilities + 4 agents)
+4. **Maps** to validated SC capabilities (the 6 Purview plugin capabilities + 3 agents)
 5. **Generates** a complete prompt or multi-step promptbook with:
    - Copy-paste-ready prompt text
    - Expected output description

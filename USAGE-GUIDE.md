@@ -1,4 +1,4 @@
-# 📘 How to Use Copilot Forge
+# 📘 How to Use Lumen
 
 **Author:** Bilel Azaiez — Microsoft CSA, with AI-assisted development
 
@@ -28,6 +28,8 @@ Security Copilot (SC) provides two experiences for data security:
 2. Bottom left: **Sources** > **Plugins**
 3. Find **Purview** and toggle **On**
 4. You'll see confirmation: "Purview plugin enabled"
+
+> **Licensing note:** As of November 2025, Security Copilot is included for Microsoft 365 E5 customers with default SCU capacity auto-provisioned (Purview agents included). Agents can be deployed under a dedicated Microsoft Entra Agent ID (recommended) to separate agent actions from user identity.
 
 This allows SC to access:
 - Your DLP alerts and policies
@@ -199,27 +201,23 @@ Agents are autonomous SC workflows that handle a specific task. You set them up 
 
 ### Available Agents in Purview
 
-**DLP Triage Agent**
+**DLP Triage Agent** — official name: **Microsoft Purview Triage Agent in DLP** (GA)
 - Automatically categorizes DLP alerts
 - Requires: Active-mode DLP policies (not simulation)
 - Output: "Needs attention" / "Less urgent" / "Not categorized"
 - Best for: Large alert volumes, consistent classification
+- Can send **Teams Remediation Reminders** (preview) — a Teams chat to a file's last-modified user asking them to remove sensitive content from SharePoint/OneDrive files triaged as "Needs attention"
 
-**IRM Triage Agent**
+**IRM Triage Agent** — official name: **Microsoft Purview Triage Agent in Insider Risk Management** (GA)
 - Automatically categorizes IRM alerts and cases
 - Output: "Needs attention" / "Less urgent" / "Not categorized"
 - Best for: IRM case priority management
 
-**DSPM Posture Agent**
-- Natural language data discovery and classification
-- Automatically discovers sensitive data patterns
+**Data Security Posture Agent** (Preview) — serves both DSPM and Data Security Investigations (DSI)
+- In DSPM: natural language data discovery and classification — automatically discovers sensitive data patterns
+- In DSI: tenant-wide credential scanning and anomaly detection — credential exposure findings, behavioral anomalies
 - Output: Risk assessment and remediation suggestions
-- Best for: Data posture assessments, governance workflows
-
-**Data Security Investigations Agent**
-- Credential scanning and anomaly detection
-- Output: Credential exposure findings, behavioral anomalies
-- Best for: Proactive threat hunting, insider risk investigation
+- Best for: Data posture assessments, governance workflows, proactive threat hunting, insider risk investigation
 
 ### Set Up a DLP Triage Agent
 
@@ -358,7 +356,7 @@ See [agents/README.md](agents/README.md) for detailed instructions and examples.
 - Alert content >30 days before agent enablement is out of scope
 
 **IRM Triage Agent**
-- Only analyzes SharePoint file content in preview (not email or device logs yet)
+- Analyzed only SharePoint file content during preview (a preview-era residual; not email or device logs yet)
 - Requires IRM+ or IRM+ Risk investigation license
 
 **SC Context & Performance**
@@ -375,6 +373,7 @@ See [agents/README.md](agents/README.md) for detailed instructions and examples.
 - SC cannot directly remediate in Purview (no delete, no apply policy)
 - SC output informs your decisions; you execute actions in Purview
 - This is intentional for audit and control
+- Exception: the DLP Triage Agent can now send Teams Remediation Reminders (preview) — a Teams chat to a file's last-modified user asking them to remove sensitive content. SC still cannot close alerts or change policies.
 
 ### Common Gotchas
 

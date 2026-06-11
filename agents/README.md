@@ -1,4 +1,4 @@
-# 🤖 Agent System — Copilot Forge
+# 🤖 Agent System — Lumen
 
 ## 🎯 Start Here
 

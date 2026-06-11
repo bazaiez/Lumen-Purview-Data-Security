@@ -38,8 +38,8 @@ Concrete walkthroughs showing how the 6-agent system handles real scenarios.
 1. **Orchestrator** receives request, identifies: Active Incident → Investigation Agent primary
 2. **Knowledge Agent** confirms cross-signal correlation requires data sharing enabled between DLP and IRM
 3. **Investigation Agent** builds 5-phase playbook with SC prompts at every step, uses Operation Anchor pattern with exact audit operations (FileDownloaded, FileSyncDownloadedFull, FileCopied, FileCreatedOnRemovableMedia)
-4. **Prompt Generator Agent** generates additional prompts for credential scanning (DSI Agent) since source code may contain API keys
-5. **Quality Reviewer Agent** flags that audit log lag (24-48 hours) may affect timeline accuracy; confirms all prompts are [VALIDATED]
+4. **Prompt Generator Agent** generates additional prompts for credential scanning (Data Security Posture Agent in DSI) since source code may contain API keys
+5. **Quality Reviewer Agent** flags that audit log lag (24-48 hours, a Purview UAL platform characteristic) may affect timeline accuracy; confirms all prompts are [VALIDATED]
 6. **Output:** Investigation playbook + SC prompts + decision trees + remediation actions + escalation matrix + evidence preservation checklist
 
 ---

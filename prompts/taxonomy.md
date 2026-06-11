@@ -1,4 +1,4 @@
-# Prompt Taxonomy: Copilot Forge — Purview Data Security
+# Prompt Taxonomy: Lumen — Purview Data Security
 
 A framework for classifying, designing, and evaluating prompts used with Microsoft Security Copilot to investigate and respond to incidents within Microsoft Purview Data Security.
 

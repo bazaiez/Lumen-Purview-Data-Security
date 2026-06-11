@@ -1,4 +1,4 @@
-# 📝 Copilot Forge — Prompt Books
+# 📝 Lumen — Prompt Books
 
 Complete prompt library for Security Copilot + Purview Data Security integration. 
 

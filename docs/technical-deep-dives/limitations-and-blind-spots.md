@@ -22,7 +22,7 @@ This document provides an honest assessment of Security Copilot's limitations wh
 |-------------|------------|--------|
 | DLP alerts | 15-30 minutes | Near real-time for triage |
 | IRM alerts | Near real-time | Good for active threat detection |
-| Audit logs | 24-48 hours | Timeline reconstruction may miss recent events |
+| Audit logs | 24-48 hours | Timeline reconstruction may miss recent events (a Purview UAL platform characteristic, not SC-specific) |
 | DSPM scans | Days to weeks (periodic) | Posture assessment reflects scan date, not current state |
 
 ## Analytical Limitations
@@ -46,17 +46,20 @@ This document provides an honest assessment of Security Copilot's limitations wh
 
 ## Operational Limitations
 
-### DLP Triage Agent
+### DLP Triage Agent (Microsoft Purview Triage Agent in DLP — GA)
 - Only works with **active mode** DLP policies (not simulation/audit mode)
 - Cannot process alerts from custom DLP solutions (only native Purview DLP)
 - Triage categories are pre-defined — custom categorization requires manual setup
+- Note: SC has no policy/alert write-back, but this agent can now send **Teams Remediation Reminders** (preview) — a Teams chat to a file's last-modified user asking them to remove sensitive content from SharePoint/OneDrive files triaged as "Needs attention". It still cannot close alerts or change policies.
 
-### IRM Triage Agent
+### IRM Triage Agent (Microsoft Purview Triage Agent in Insider Risk Management — GA)
+- Analyzed only SharePoint file content during preview (a preview-era residual; not email/device)
 - Risk scoring is model-based — may not reflect actual insider threat risk in all contexts
 - Role baselines may not exist for small teams or new employees
 - Cannot assess organizational privilege abuse without RBAC context
 
-### DSPM Posture Agent
+### Data Security Posture Agent (Preview — serves both DSPM and DSI)
+- The same agent delivers DSPM (natural-language data discovery) and Data Security Investigations (DSI, tenant-wide credential scanning) — it is not a separate DSI agent
 - Natural language queries may return partial results for complex data estates
 - Scan coverage depends on connectors configured — unscanned sources are invisible
 - Cannot remediate findings directly — all actions are recommendations

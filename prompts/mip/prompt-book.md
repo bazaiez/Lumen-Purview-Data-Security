@@ -4,7 +4,7 @@
 **Required Plugin:** Microsoft Purview
 **Last Validated:** April 2026
 
-Copilot Forge — Purview Data Security: Sensitivity label coverage, misconfiguration, and auto-labeling effectiveness.
+Lumen — Purview Data Security: Sensitivity label coverage, misconfiguration, and auto-labeling effectiveness.
 
 **Note:** SC accesses label data and misclassification patterns through Purview's data risk summaries and DLP integrations. These prompts help evaluate label strategy, not configure labels directly (that's in the portal).
 

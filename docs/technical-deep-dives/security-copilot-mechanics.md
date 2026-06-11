@@ -56,11 +56,14 @@ SC supports custom agents through multiple creation methods:
 - **NL2Agent** — Natural language description converted to agent
 - **MCP (Model Context Protocol)** — External tool integration
 
-### Deployed Purview Agents (GA)
-- **DLP Triage Agent** — Auto-categorizes active mode DLP alerts
-- **IRM Triage Agent** — Auto-categorizes IRM alerts
-- **DSPM Posture Agent** — Natural language data discovery queries
-- **Data Security Investigations (DSI) Agent** — Credential scanning
+### Deployed Purview Agents (mixed GA / Preview)
+- **Microsoft Purview Triage Agent in DLP** (DLP Triage Agent) — **GA** — Auto-categorizes active mode DLP alerts
+- **Microsoft Purview Triage Agent in Insider Risk Management** (IRM Triage Agent) — **GA** — Auto-categorizes IRM alerts (analyzed only SharePoint file content during preview)
+- **Data Security Posture Agent** — **Preview** — available in BOTH DSPM (natural-language data discovery queries) and Data Security Investigations (DSI, tenant-wide credential scanning)
+
+Newer embedded capabilities (2025–2026):
+- **Activity Explorer + Copilot integration** (preview) — natural-language prompts to generate filters and insights from Activity Explorer data
+- **Global Copilot entry point in the Purview portal** — context-aware Copilot button in the suite header across Purview solutions
 
 ## Promptbooks
 
@@ -70,7 +73,7 @@ Promptbooks are sequential multi-prompt workflows:
 - Promptbooks can be shared across the organization
 - Output from one step feeds into the next automatically
 
-## SCU (Security Copilot Units)
+## SCU (Security Compute Units)
 
 - Each prompt/agent call consumes SCUs
 - SCU consumption varies by operation complexity
@@ -80,9 +83,9 @@ Promptbooks are sequential multi-prompt workflows:
 ## Limitations
 
 - SC cannot access file contents — only metadata and classifications
-- Audit log data may lag 24-48 hours
+- Audit log data may lag 24-48 hours (a Purview Unified Audit Log platform characteristic, not an SC-specific limit)
 - IRM data sharing must be enabled for cross-signal correlation
-- SC cannot take remediation actions directly — all actions are recommendations
+- SC cannot take remediation actions directly — all actions are recommendations. **Exception:** the DLP Triage Agent can send Teams Remediation Reminders (preview) — a Teams chat asking a file's last-modified user to remove sensitive content; SC still cannot close alerts or change policies
 - Custom SITs (Sensitive Information Types) may not be fully interpreted
 - DLP Triage Agent requires active mode policies (not simulation mode)
 

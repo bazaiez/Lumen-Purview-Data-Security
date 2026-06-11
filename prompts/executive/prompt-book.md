@@ -4,7 +4,7 @@
 **Required Plugin:** Microsoft Purview
 **Last Validated:** April 2026
 
-Copilot Forge — Purview Data Security: Leadership summaries, board reports, and incident briefs.
+Lumen — Purview Data Security: Leadership summaries, board reports, and incident briefs.
 
 **Note:** These prompts focus on SC's ability to synthesize and translate technical findings into executive language. SC consumes raw Purview data and outputs leadership-ready narratives, risk assessments, and recommendations.
 

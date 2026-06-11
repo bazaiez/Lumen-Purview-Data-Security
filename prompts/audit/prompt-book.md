@@ -4,7 +4,7 @@
 **Required Plugin:** Microsoft Purview (primary); Microsoft Entra (for sign-in anomalies); see per-section notes
 **Last Validated:** April 2026
 
-Copilot Forge — Purview Data Security: Audit log analysis, timeline reconstruction, and cross-signal correlation.
+Lumen — Purview Data Security: Audit log analysis, timeline reconstruction, and cross-signal correlation.
 
 **Note:** SC accesses audit data through the Purview plugin, not raw audit log queries. These prompts ask SC to analyze activities, identify patterns, and correlate signals—not to write KQL.
 

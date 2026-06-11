@@ -4,7 +4,7 @@
 **Required Plugin:** Microsoft Purview
 **Last Validated:** April 2026
 
-Copilot Forge — Purview Data Security: Operational tasks, policy setup guidance, configuration review, and deployment readiness.
+Lumen — Purview Data Security: Operational tasks, policy setup guidance, configuration review, and deployment readiness.
 
 **Note:** These prompts answer "how do I..." questions and guide operational decisions. SC leverages Purview documentation and best practices to support implementation work. Not all configurations are performed by SC (that's in the portal), but SC can guide, validate, and recommend.
 

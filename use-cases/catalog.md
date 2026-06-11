@@ -1,4 +1,4 @@
-# Use Case Catalog: Copilot Forge — Purview Data Security
+# Use Case Catalog: Lumen — Purview Data Security
 
 **Framework Version:** 1.1
 **Last Updated:** April 2026

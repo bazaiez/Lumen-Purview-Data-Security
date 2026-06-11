@@ -4,7 +4,7 @@
 **Required Plugin:** Microsoft Purview
 **Last Validated:** April 2026
 
-Copilot Forge — Purview Data Security: CSA-ready demo prompts, workshop scenarios, and talking point generators.
+Lumen — Purview Data Security: CSA-ready demo prompts, workshop scenarios, and talking point generators.
 
 **Note:** These prompts are optimized for live customer presentations and workshops. They're designed to work reliably, generate compelling output, and create "wow" moments that show Purview + SC value. Avoid complex cross-signal correlations in demos; stick to validated, single-plugin capabilities.
 

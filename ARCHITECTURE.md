@@ -1,4 +1,4 @@
-# Architecture: Copilot Forge — Purview Data Security
+# Architecture: Lumen — Purview Data Security
 
 **Document Version:** 1.1
 **Last Updated:** April 2026

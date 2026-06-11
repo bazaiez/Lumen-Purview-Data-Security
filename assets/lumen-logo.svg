@@ -1,0 +1,54 @@
+<svg width="1280" height="320" viewBox="0 0 1280 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lumen — Security Copilot for Microsoft Purview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A2540"/>
+      <stop offset="0.55" stop-color="#0E2E54"/>
+      <stop offset="1" stop-color="#13386B"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="160" y1="60" x2="160" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7FE7FF"/>
+      <stop offset="1" stop-color="#3AA0FF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.62">
+      <stop stop-color="#BFefff" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#5BB8FF" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#5BB8FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="word" x1="300" y1="120" x2="980" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#CFE9FF"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="60" y1="60" x2="260" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7FE7FF"/>
+      <stop offset="1" stop-color="#2E7BE6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="320" rx="36" fill="url(#bg)"/>
+
+  <!-- mark: a beacon / lumen of light inside a shield-ring -->
+  <g transform="translate(160,160)">
+    <circle r="150" fill="url(#glow)"/>
+    <!-- shield ring -->
+    <path d="M0,-104 C44,-104 86,-92 96,-86 C96,-30 86,52 0,104 C-86,52 -96,-30 -96,-86 C-86,-92 -44,-104 0,-104 Z"
+          fill="none" stroke="url(#ring)" stroke-width="9" opacity="0.9"/>
+    <!-- light beams -->
+    <g stroke="url(#beam)" stroke-width="7" stroke-linecap="round" opacity="0.92">
+      <line x1="0" y1="-128" x2="0" y2="-150"/>
+      <line x1="90" y1="-90" x2="106" y2="-106"/>
+      <line x1="128" y1="0" x2="150" y2="0"/>
+      <line x1="-90" y1="-90" x2="-106" y2="-106"/>
+      <line x1="-128" y1="0" x2="-150" y2="0"/>
+    </g>
+    <!-- the lumen: a luminous droplet/flame core -->
+    <path d="M0,-66 C34,-26 44,2 44,22 a44,44 0 1 1 -88,0 C-44,2 -34,-26 0,-66 Z"
+          fill="url(#beam)"/>
+    <circle cx="0" cy="24" r="22" fill="#0A2540" opacity="0.25"/>
+    <circle cx="-8" cy="12" r="10" fill="#EAFBFF" opacity="0.9"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="330" y="178" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="120" font-weight="700" fill="url(#word)" letter-spacing="2">Lumen</text>
+  <text x="334" y="232" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="31" font-weight="500" fill="#8FC5F5" letter-spacing="3.5">SECURITY COPILOT · MICROSOFT PURVIEW</text>
+  <rect x="336" y="196" width="300" height="3" rx="1.5" fill="#3AA0FF" opacity="0.6"/>
+</svg>

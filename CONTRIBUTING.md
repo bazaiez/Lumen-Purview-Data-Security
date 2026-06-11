@@ -2,7 +2,7 @@
 
 **Author:** Bilel Azaiez — Microsoft CSA, with AI-assisted development
 
-Thank you for contributing to the Copilot Forge framework. This guide explains how to add new content and maintain quality standards.
+Thank you for contributing to the Lumen framework. This guide explains how to add new content and maintain quality standards.
 
 > **Tip:** You can use the [Prompt Generator Agent](agents/prompt-generator-agent.md) to generate new prompts from scratch, and the [Quality Reviewer Agent](agents/quality-reviewer-agent.md) to validate them before submitting.
 

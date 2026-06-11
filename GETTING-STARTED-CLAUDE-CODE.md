@@ -2,7 +2,7 @@
 
 **Author:** Bilel Azaiez — Microsoft CSA, with AI-assisted development
 
-This guide takes you from never having used Copilot Forge to generating your first Security Copilot prompt.
+This guide takes you from never having used Lumen to generating your first Security Copilot prompt.
 
 ---
 

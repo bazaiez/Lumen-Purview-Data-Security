@@ -1,4 +1,4 @@
-# Copilot Forge — Purview Data Security: Use Case Catalog
+# Lumen — Purview Data Security: Use Case Catalog
 
 ## Overview
 

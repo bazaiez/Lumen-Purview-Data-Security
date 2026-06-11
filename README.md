@@ -1,4 +1,8 @@
-# ⚒️ Copilot Forge — Purview Data Security
+<div align="center">
+  <img src="assets/lumen-logo.svg" alt="Lumen — Security Copilot for Microsoft Purview" width="720">
+</div>
+
+# Lumen — Purview Data Security
 
 > **AI-powered prompt engineering & investigation framework for Microsoft Security Copilot + Purview**
 
@@ -6,7 +10,7 @@ A field-ready **6-agent system** with **9 prompt books** for Data Security CSAs,
 
 ---
 
-## 🧠 What Is Copilot Forge?
+## 🧠 What Is Lumen?
 
 A complete **6-agent AI system** that can handle any Security Copilot + Purview request — from scratch.
 
@@ -101,7 +105,7 @@ graph TD
 ## 📂 Repository Structure
 
 ```
-📁 Copilot Forge
+📁 Lumen
 │
 ├── 📄 README.md                        ← you are here
 ├── 📄 GETTING-STARTED-CLAUDE-CODE.md   ← from zero to productive in 5 min
@@ -203,7 +207,7 @@ graph TD
 
 ## 🔌 Core SC + Purview Capabilities
 
-> These are the **6 validated plugin capabilities** that all prompts in Copilot Forge map to.
+> These are the **6 validated plugin capabilities** that all prompts in Lumen map to.
 
 | Capability | What It Does |
 |-----------|-------------|
@@ -214,7 +218,7 @@ graph TD
 | 🟢 **Zoom Into Purview Data Risk** | Deep-dive data risk attributes and policy matches |
 | 🟢 **Zoom Into Purview User Risk** | Deep-dive user activities, anomalies, sequences |
 
-**SC Agents (Preview):** DLP Triage Agent | IRM Triage Agent | DSPM Posture Agent | DSI Agent
+**SC Agents:** Microsoft Purview Triage Agent in DLP (GA) | Microsoft Purview Triage Agent in Insider Risk Management (GA) | Data Security Posture Agent (Preview — serves both DSPM and Data Security Investigations / DSI)
 
 ---
 
